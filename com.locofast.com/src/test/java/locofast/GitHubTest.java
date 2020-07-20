@@ -10,7 +10,10 @@ public class GitHubTest extends BaseSetUpTest{
 		log.info("Rurring the 1st test case");
 
 		log.info("log into application");
-		new GitHubPage().logInIntoApplication("krajbhar00@gmail.com","Bhardwaj@19");
+		
+		String userName="";
+		String userPwd="";
+		new GitHubPage().logInIntoApplication(userName,userPwd);
 		
 		log.info("Creating new repository");
 		new GitHubPage().createNewRepository();
